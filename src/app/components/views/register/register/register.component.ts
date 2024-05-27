@@ -1,13 +1,13 @@
 import { Component, inject } from '@angular/core';
-import { UsersService } from '../../../../services/users/auth.service';
+import { AuthService } from '../../../../services/auth/auth.service';
 
 @Component({
   selector: 'app-register',
   standalone: true,
   imports: [],
   templateUrl: './register.component.html',
-  styleUrl: './register.component.css',
+  styleUrl: './register.component.scss',
 })
 export class RegisterComponent {
-  usersService = inject(UsersService);
+  authService = inject(AuthService);
 }

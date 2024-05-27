@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { AuthService } from '../../../../services/users/auth.service';
+import { AuthService } from '../../../../services/auth/auth.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserModel } from '../../../../models/user.mode';
 
@@ -8,7 +8,7 @@ import { UserModel } from '../../../../models/user.mode';
   standalone: true,
   imports: [],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css',
+  styleUrl: './login.component.scss',
 })
 export class LoginComponent {
   AuthService = inject(AuthService);
